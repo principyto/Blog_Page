@@ -1,0 +1,620 @@
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/main.css">
+  <title>Grid Layout</title>
+  </head>
+  <body>
+  <div class="container">
+    <header class="header">Header</header>
+    <aside class="sidebar">Posts
+      <ul>
+        <li><a href="index">Main Page</a></li>
+        <% files.forEach(function(file) { %>
+          <% if (file !== 'index' && file !== 'edit') { %>
+            <li>
+              <a href="/<%= file %>"><%= file %></a>
+              <br>
+              <form action="/delete" method="POST" style="display:inline;">
+                <input type="hidden" name="filename" value="<%= file %>">
+                <button type="submit">Delete</button>
+              </form>
+              <form action="/edit" method="POST" style="display:inline;">
+                <input type="hidden" name="filename" value="<%= file %>">
+                <button type="submit">Edit</button>
+              </form>
+            </li>
+          <% } %>
+        <% }); %>
+      </ul>
+    </aside>
+    <div>
+      <h1 class="main-content" id="Title"> La Curiosa Disonancia de Donkey Kong Country</h1>
+      <p class="main-content" id="Content">A ver, quiero que pienses y trates de analizar esto
+<br>Trata de imaginar o recordar música que usualmente escucharías
+<br>En la época limitada a los 8 y 16-bits en videojuegos
+<br>¿Ya lo tienes?
+<br>Era música que aún y con sus limitantes técnicas lograron maravillas
+<br>Con los diferentes autores que expulsaban creatividad
+<br>Una era que
+<br>Pensando en consolas, destacaba por sus melodías fáciles de distinguir
+<br>Canciones pegajosas y estructuras, muy estrictas de ritmo y sensación
+<br>En dependencia de la situación del juego
+<br>Claramente, esto no era algo malo, pero
+<br>Ahora piensa, en esto
+<br>[Música]
+<br>Durante los años 90´s como deben de saber
+<br>Y sobre todo si han visto otros vídeos del canal
+<br>Los videojuegos vivieron una era de transición que usualmente
+<br>Llegaban de los mismos lados del mundo
+<br>Y cuando no era este el caso
+<br>Era casi siempre enfocado en los juegos para PC
+<br>Empezando a jugar de nuevo esta trilogía del Super Nintendo
+<br>Comencé a pensar en esta "DISONANCIA"
+<br>Que se salía del contexto con los demás juegos de la consola
+<br>Donkey Kong Country, es un juego INMERSIVO, en todos los aspectos
+<br>Viéndolo cínicamente tanto como algo bueno, como algo malo
+<br>¿Y por qué digo esto?
+<br>No es que ser inmersivo puede ser algo malo, al contrario
+<br>Pero
+<br>Necesito que te pongas en contexto de lo que estaba pasando en ese entonces
+<br>Tomando en cuenta que, históricamente una compañía entera
+<br>Que hace videojuegos, primeramente siendo mecánicamente divertidos como Nintendo
+<br>Haga esto para una propiedad intelectual tan relevante en la historia de los videojuegos
+<br>Hasta ese entonces y en un juego de género plataforma
+<br>Y viniendo de parte de una desarrolladora inglesa
+<br>Cuando la tendencia de estos juegos venía más desde el Oriente
+<br>Es lo que genera una gran distinción
+<br>Sobre todo cuando sabemos que la trilogía
+<br>Está en el top 10 de los juegos más vendidos del Super Nintendo
+<br>En medio, de puros juegos japoneses
+<br>Todos conocemos la impresionante banda sonora y el revolucionario arte
+<br>Junto a sus secuelas
+<br>Eso es lo más común escuchar sobre estos juegos
+<br>Pero no es la única disonancia sobre otros juegos
+<br>Sino en muchos aspectos desde su propio desarrollo
+<br>Hasta en detalles específicos
+<br>De sus MECÁNICAS DE JUEGO
+<br>Sus CONTROLES
+<br>Y sus FÍSICAS
+<br>Y esto, es lo que podemos aprender y analizar para saber por qué funcionó
+<br>No sólo en lo obvio
+<br>Así que, es momento de ver la curiosa disonancia de Donkey Kong Country
+<br>Y cómo esto afectó en la percepción de este juego
+<br>Y cómo ayudó a llamar la atención, no sólo por su innovadora presentación 3D
+<br>Sino, cómo creó una experiencia de juego completamente diferente
+<br>En un género de videojuegos, bastante común
+<br>PARTE 1: Desde Inglaterra con (Amor)
+<br>Los primeros segundos del juego dicen muchísimo
+<br>Un viejo simio, escuchando la canción original
+<br>Y en el escenario oscuro y sin vida del primer Donkey Kong
+<br>Mientras alguien joven lo reemplaza, mostrando un mundo completamente nuevo
+<br>Sale lo viejo; entra lo nuevo
+<br>[Música]
+<br>Esto era el mensaje de estos juegos
+<br>Innovación
+<br>Revolución
+<br>Y Disonancia, sobre los demás
+<br>Un mensaje que podrá tomarse como un restriego en la cara de Rare hacia Nintendo
+<br>Por su logro y una condescendencia de Nintendo hacía Rare
+<br>Como deben de saber la relación de ambas compañías, era un poco... Complicada
+<br>No porque fueran enemigos o competencia
+<br>Sino porque Rare constantemente demostraba tener la razón sobre muchas de las ideas de Nintendo
+<br>Y con Donkey Kong Country, no fue la excepción
+<br>Era una relación que constantemente presionaba al otro
+<br>A hacerlo mejor con tal de sólo decir, que pudiste hacerlo mejor
+<br>Mientras un poco conflictiva era bastante efectiva
+<br>Es importante que nos pongamos en contexto otra vez
+<br>Donkey Kong, era muy popular en los años 90's
+<br>Desde su nacimiento en el resurgimiento de los videojuegos en los años 80's
+<br>Así que utilizar este personaje, era un gran compromiso
+<br>Significaba, casi 10 años de no existir un juego con este personaje tan reconocible
+<br>Sin contar el relanzamiento del primer juego, en consolas
+<br>Curiosamente, 1994 también fue el año
+<br>Del lanzamiento del reboot del primero
+<br>En Game Boy
+<br>Pero en consolas, la compañía inglesa Rare
+<br>Fue el que se encargó de hacerlo
+<br>Aún y con lo que esto significaba
+<br>Como ya hemos hablado de Banjo-Kazooie antes
+<br>Sabemos que Rare tiene una filosofía de mejorar sobre lo que ya funciona de otras compañías
+<br>Y le funcionó desde tiempos, muy atrás
+<br>No es diferente con Donkey Kong Country tomando en cuenta que el mundo
+<br>Todavía estaba jugando Super Mario World como algo nuevo en esos años
+<br>Estos juegos, son un avance técnico que Nintendo
+<br>No estaba dispuesto a admitir que lo necesitaba
+<br>En ese año del lanzamiento del primer juego
+<br>Sega estaba empezando a abrir ese mercado, gracias a sus logros visuales
+<br>Y que Nintendo
+<br>Haya permitido el desarrollo de algo tan revolucionario para un personaje
+<br>Tan importante para dicha compañía
+<br>Que fue creado y diseñado por Shigeru Miyamoto
+<br>Es lo que te da a entender que Nintendo
+<br>Indirectamente
+<br>Aceptó a regañadientes
+<br>Que efectivamente
+<br>Necesitaba un salto técnico, para seguir compitiendo contra
+<br>La inminente ola de juegos en 3D
+<br>Que ya venía en camino en 1994
+<br>Muchos juegos, en dependencia del estilo que quieres hacer actualmente
+<br>Tienen la particularidad que son
+<br>Hechos a mano
+<br>Cada uno de sus frames
+<br>Y por lo tanto, tenemos que asemejarlo a algo
+<br>Hablando todavía más en esa época que el pixelart
+<br>Era más una necesidad técnica, que un estilo artístico
+<br>Como es en la actualidad
+<br>Donkey Kong Country, había topado con otro problema, completamente ajeno
+<br>A los demás del Super Nintendo
+<br>Que era, convertir la cantidad de frames
+<br>Relativamente ilimitados por los gráficos 3D
+<br>A un número bastante limitados de frames
+<br>En una animación de 16-bits
+<br>Y de aquí en adelante, es lo que veremos de todas las diferencias
+<br>[Música]
+<br>PARTE 2: Mecánicas de Juego
+<br>Aquí es donde más indiscretamente, la disonancia de Donkey Kong Country
+<br>Se hace notar sobre los demás juegos de Super Nintendo y juegos de la época
+<br>Hacer juegos de plataforma, en teoría
+<br>Es de los juegos más sencillos de hacer
+<br>En teoría
+<br>Solo digo en teoría
+<br>No estoy diciendo que realmente lo sean
+<br>Pero es con lo que muchos
+<br>Empiezan a experimentar hacer cosas
+<br>Y lo entendería
+<br>Es lo que muchos de nosotros vimos por primera vez
+<br>Y por lo mismo
+<br>Hacer un buen juego de plataforma
+<br>Es muy difícil
+<br>Es demasiado fácil perder el interés para muchos jugadores en estos juegos
+<br>Porque técnicamente es moverse de punto A a punto B
+<br>Lo que hace resaltar a estos juegos
+<br>No es que puedas moverte desde este punto A a punto B
+<br>Sino, cómo llegas de punto A punto B
+<br>Las mecánicas y las físicas que otorgan la sensación del juego, lo es todo
+<br>La precisión sobre la responsividad y los controles
+<br>Aportan igualmente a este todo
+<br>Y es algo que siempre me ha causado conflicto
+<br>Donkey Kong Country
+<br>Porque en cierto punto
+<br>No cumple con esto
+<br>Y en un momento veremos cómo y por qué
+<br>La presentación de cómo jugar esto
+<br>Rozan las mismas mecánicas de otros juegos de plataforma de punto A a punto B
+<br>Desde la selección de niveles un mapa
+<br>Y hasta en la insistencia de crear niveles secretos
+<br>Este último, siendo un ejemplo de llevarlo al extremo
+<br>Al crear tantos secretos, que era irresistible volverlo a pasar
+<br>Y tratar de llegar al famoso 101% completado
+<br>Es totalmente familiar
+<br>Pero comparado con Super Mario World
+<br>Era más "ambiguo" que Mario World
+<br>No eran tan obvias las mecánicas
+<br>Y muchas veces buscaban la exploración fuera de la caja
+<br>Aún más que Mario
+<br>Porque muchas de ellas significaban arriesgar tus vidas
+<br>Y comenzaba una cierta desconfianza
+<br>Pero intriga por estos juegos
+<br>Todas las colisiones son, imperfectas
+<br>Es decir, no están completamente cuadradas como era muy común en juegos de pixel art
+<br>Otra vez, comparándolo con Super Mario World
+<br>Y aunque esto suene a ser algo... "Malo"
+<br>Esta imperfección
+<br>Es importante para la sensación orgánica que quería dar el juego
+<br>Estamos hablando de las colisiones, tanto de plataformas, como de enemigos
+<br>E interacciones con mecánicas como girar y correr
+<br>Y esto generó
+<br>Muchas mecánicas interesantes que a veces
+<br>Eran difíciles de controlar, por lo mismo de ser orgánicos
+<br>Y ahora, veamos cómo
+<br>Los tres juegos de Super Nintendo, utilizan un botón para correr
+<br>Igual que Super Mario World, otra vez
+<br>Pero esto ocasiona que el personaje gire y este} giro
+<br>No solo puede derrotar enemigos y obstáculos
+<br>Sino que incrementa la velocidad del movimiento, en tierra
+<br>La velocidad de giro también depende de la inercia natural que tenía el jugador
+<br>Así que este giro
+<br>Puede ser muy variado, en dependencia de cómo y dónde, lo usa el jugador
+<br>Girar a una velocidad considerable
+<br>Y atravesando una línea de hasta cuatro enemigos
+<br>No solo hace el giro más largo
+<br>Sino que te pone en una velocidad increíblemente grande
+<br>Esta mecánica que describimos
+<br>Puede ser utilizada para extender dicho giro dejando presionando el botón de correr
+<br>Y poder combinar esta mecánica ganada para pasar un nivel de forma más rápida
+<br>O poder extender la distancia de los saltos del personaje
+<br>Y llegar a lugares, originalmente
+<br>Inalcanzables
+<br>Lo interesante de esto
+<br>Es que son mecánicas completamente basadas en físicas
+<br>Y no en programaciones limitadas
+<br>Así que
+<br>Dependiendo de la habilidad de cada jugador
+<br>Ocasiona que la experiencia sea más flexible para quien sea
+<br>Puede ser increíblemente rápido para algunos
+<br>O puede ser cauteloso para otros
+<br>Una mecánica mucho más orgánica de otros juegos de la época
+<br>Las mismas físicas
+<br>Permiten saltar un poco después
+<br>De haber dejado de tocar el suelo
+<br>Todo en este juego, como dijimos
+<br>No tiene colisiones perfectas
+<br>Esto da más control o puede confundir
+<br>A los jugadores, mostrando que esto es otro estilo, completamente
+<br>Y esto no es un error o es algo que lo dejaron pasar por alto
+<br>Claramente
+<br>Hay espacios que te motivan a jugar de esta forma
+<br>Poniendo recompensas obtenibles con estos
+<br>"Errores"
+<br>Y esta es la parte importante que se extiende
+<br>Con el siguiente punto
+<br>PARTE 3: Diseño de Niveles
+<br>[Música]
+<br>El diseño y sus ambientes estuvieron pensados diferente
+<br>En primer lugar por la filosofía más orgánica
+<br>Pero también porque cada lugar
+<br>Tiene un mayor significado como temática e historia
+<br>Un juego 2D, normalmente se diseña
+<br>En base a lo que pueda hacer el personaje que usas
+<br>Y Donkey Kong Country, no es la excepción a eso
+<br>Pero tiene mayor impacto a la aventura estos lugares
+<br>Porque convergen primero
+<br>A que es el hogar del personaje
+<br>Y no solo es una pista de obstáculos solamente
+<br>Los juegos de Mario por otro lado
+<br>Es primero una serie de OBSTÁCULOS
+<br>Y después un AMBIENTE
+<br>Tan así
+<br>Que Mario Maker lo permite hacer con lo que sea
+<br>Y es algo que explicamos en el vídeo de Super Mario World
+<br>Donkey Kong Country, es lo contrario a esta regla
+<br>Y otra vez
+<br>Ninguno es mejor que otro
+<br>No me malinterpreten
+<br>Simplemente son dos estilos completamente de diseños de niveles
+<br>Pero que era raro, para un juego de Super Nintendo
+<br>Como dijimos anteriormente
+<br>Estos juegos de Donkey Kong Country
+<br>Crean cierta incertidumbre por el
+<br>¿Qué hay ahí?
+<br>Al punto de crear un poco de miedo
+<br>Por no perder más vidas
+<br>Los secretos en videojuegos, son muy importantes
+<br>Sobre todo en mundos que te incitan a explorar
+<br>Y a ver los detalles
+<br>Sin importar el género realmente
+<br>En Donkey Kong Country
+<br>Aun y con esta incertidumbre
+<br>Nunca dejan desamparado y perdido al jugador
+<br>Desde el primer nivel
+<br>No
+<br>Desde los primeros
+<br>SEGUNDOS del juego
+<br>Incentiva la exploración al dejarte pensando
+<br>¿Qué hay detrás de esa cueva que acabo de pasar?
+<br>O si eres todavía más curioso
+<br>Te recompensa con una vida si regresas a la casa de donde saliste
+<br>Solo en los primeros momentos del primer nivel
+<br>El juego te recompensa casi cuatro veces de diferentes secretos
+<br>Desde caer desde lo más alto de las palmeras
+<br>O hasta por descubrir una puerta secreta
+<br>Tal vez por accidente
+<br>Pero que claramente está puesta para que tú mismo te dieras cuenta de que van a existir
+<br>Más secretos como estos
+<br>Es decir
+<br>Que no te desmotivaras a buscar todo
+<br>En el resto del juego
+<br>Claramente están puestos al principio para que entiendas el concepto de los niveles
+<br>Y su acomodo para que te familiarices
+<br>Rápidamente
+<br>Aún y teniendo en cuenta
+<br>Lo diferente que se podría ver este juego
+<br>De los demás del Super Nintendo, en la época
+<br>Hay secretos que son hasta
+<br>Difíciles de NO conseguir
+<br>Con tal de que entiendas este punto
+<br>Y si no estás seguro si ya conseguiste todos los secretos de cada uno de los niveles
+<br>El juego, te da la marca visual en cada nombre del nivel
+<br>Al ponerle un signo de exclamación
+<br>No sólo esta exploración
+<br>Y los diseños de los niveles, con la especial atención
+<br>A cada uno de los secretos, era importante
+<br>Sino que por hacer esto
+<br>El juego enfocó muchos sus secretos
+<br>En como eso se puede recompensar al jugador
+<br>En el primero, eran solamente más vidas
+<br>Y tener propiamente la satisfacción
+<br>De tener mayor porcentaje al final
+<br>Pero en el segundo
+<br>Este diseño se enfocó, en coleccionar monedas
+<br>Que dio resultado a dar más acceso
+<br>A más niveles
+<br>Conforme conseguías dichas monedas
+<br>Para su tercera entrega
+<br>La exploración, no sólo llegaba en los niveles 2D
+<br>Sino en el selector de niveles
+<br>Haciendo que cada minúsculo detalle del coleccionismo en los niveles
+<br>Fuera relevante en estos juegos
+<br>Esta trilogía
+<br>Fueron los grandes influenciadores del género COLLECTATHON
+<br>Antes de que el mismo nombre
+<br>COLLECTATHON
+<br>Fuera algo
+<br>Y lo hicieron desde una perspectiva
+<br>Y diseño de niveles 2D
+<br>Y en enfocarse como dijimos en el
+<br>¿Qué hay ahí?
+<br>El sentido y diseño de estos mismos niveles
+<br>En todos los juegos de esta franquicia
+<br>Es menos abstracto
+<br>Que muchos plataformeros y videojuegos en general
+<br>¿A qué me refiero con esto?
+<br>Bueno, miren
+<br>Al diseñar niveles
+<br>Claramente pensamos
+<br>Cómo estos niveles, primero pueden ser funcionales
+<br>Y luego, que sean bonitos
+<br>Eso no es algo malo
+<br>Yo es algo que recomiendo y es la mejor forma en que un juego este bien hecho
+<br>Muchos juegos, de cualquier género
+<br>Se dedican a hacer obstáculos, que no existirían en la vida real
+<br>Y ese principio no es malo
+<br>Y muchos juegos han tomado su inspiración
+<br>Como Megaman, Kirby e infinidad de otros juegos plataformeros
+<br>Pero Donkey Kong Country, tiene sus plataformas y obstáculos
+<br>En base a cosas que van de acuerdo con el mundo
+<br>Son montañas que hacen plataformas
+<br>No simplemente flotan
+<br>O son cosas que inexplicablemente existen en un mundo de juegos
+<br>Bueno, sí pasa algunas veces
+<br>Pero Donkey Kong Country
+<br>Se preocupaba, porque el mundo tuviera sentido a la vez de que fuera divertido
+<br>Y esto convierte al juego no solo en una serie de niveles con diferente arte
+<br>Sino que, implícitamente
+<br>Lo hace una aventura más coherente con lo que está pasando, ahí
+<br>Es un mundo que todo está conectado, con aspectos más realistas
+<br>No es un lugar artificial y no se sienten los niveles artificiales
+<br>Y eso se siente extraño
+<br>Para ser un juego de plataforma por Nintendo
+<br>Muchos años después
+<br>Este principio
+<br>Fue el que hizo evolucionar el diseño de mundos, en general
+<br>De Zelda: Breath of the Wild
+<br>Pero esto había sido implementado, años antes
+<br>En un juego que se juega en 2D
+<br>No es completamente cuadrado como dijimos
+<br>Y por esto, Donkey Kong Country
+<br>Nunca se siente tan limitado, en lo que puedes hacer
+<br>Y hasta dan ganas de buscar
+<br>Todo lo que puedas, en esos niveles orgánicos
+<br>PARTE 4: Música
+<br>Esta parte, es la que todos ya conocemos
+<br>Y por la que muchos
+<br>Siguen al día de hoy queriendo estos juegos
+<br>No me mientan, a todos nos gusta la música
+<br>Si hay un soundtrack que puedo escuchar más exclusivamente
+<br>Para relajarme o para concentrarme a trabajar
+<br>Son de estos tres juegos
+<br>Como hemos hablado de la inmersión en tantos otros aspectos de estos juegos
+<br>La música creada por David Wise
+<br>Juega un papel importantísimo
+<br>Que sigue con la misma filosofía de disonancia hacía los demás
+<br>Piensa, justo ahora
+<br>En uno de tus juegos favoritos, en esa época
+<br>[Música]
+<br>A diferencia de algunos que ya hemos hablado en el canal
+<br>Son juegos que primeramente
+<br>Tienden a ser explosivos
+<br>O lleno de vida en su primer nivel
+<br>Su presentación y tener ese gancho, es vital
+<br>Para que quieran continuar jugando
+<br>Esa adrenalina y esa melodía tan reconocible
+<br>Es lo que más fácil recordamos, de un videojuego
+<br>Ya saben de las limitantes técnicas del sonido
+<br>En un cartucho de solo 64 KBs
+<br>Y entonces
+<br>Estamos hablando que las herramientas
+<br>Eran las mismas
+<br>David Wise, logró componer y hacer el arreglo de composición con sonido
+<br>Mucho más ambientales y asemejados a instrumentos reales
+<br>Casi es como pensar que logró hacer un arreglo con más capacidad
+<br>De lo que un cartucho de Super Nintendo podía hacer
+<br>Pero como ya hemos visto en otros vídeos como Super Mario World
+<br>La capacidad del soundtrack entero, de un cartucho
+<br>Incluido con sus efectos de sonido
+<br>Era de 64 KBs, solamente
+<br>Y eso, divido en ocho canales y ya
+<br>El simple hecho de hacer un arreglo, que va creciendo en el fondo
+<br>Como el que se escucha en el nivel del agua
+<br>Es suficiente
+<br>Para ocupar, todo el espacio, de la memoria
+<br>Así que
+<br>¿Cómo lo hizo?
+<br>David Wise en primer lugar
+<br>Es un músico con fuertes influencias de la evolutiva música de los 80's
+<br>Música pop de compositores
+<br>Como, Phill Collins, Mecano
+<br>Infinidad de artistas del estilo del momento
+<br>Que usaron, sintetizadores
+<br>Y hacían sonidos progresivos
+<br>Él había descubierto
+<br>Cómo empezar a programar con un sintetizador en una tienda
+<br>Hasta que le ofrecieron componer la música en los videojuegos de Rare, a finales de los 80's
+<br>Y en consecuencia
+<br>Llegar a su gran reto con Donkey Kong Country
+<br>Por lo que desde un principio
+<br>Sabía que tenía que intentar trabajar con sintetizadores
+<br>Para alcanzar el sonido que ya estaba acostumbrado hacer
+<br>Fuera de los juegos
+<br>La música que se introduce en cartuchos
+<br>Son sonidos directos que resultan en melodías duras y pegajosas
+<br>Que si pudiéramos ver las ondas de cada melodía
+<br>No serían tan ondas
+<br>Sino pequeñas escaleras y pendientes por estar tan compactadas
+<br>Esto, no es malo
+<br>Es un gran logro que algo con tan poca capacidad
+<br>Genere interés
+<br>El paso de David Wise en el Super Nintendo
+<br>Fue diferente
+<br>Su influencia musical, hizo que trajera
+<br>Algo nuevo a la mesa
+<br>En este caso
+<br>Utilizó un sintetizador que había comenzado a producirse en los años 90's
+<br>Llamado KORG WAVESTATION
+<br>Que lograba combinar ondas complejas, con inputs simples
+<br>Esto no era algo que el Super Nintendo
+<br>Estaba preparado para procesar en automático
+<br>Por lo que sus composiciones
+<br>Tuvo que traducirlas a ondas compuestas
+<br>E introducir, onda por onda
+<br>Como si fuera una nota musical simple
+<br>Es como decir que en lugar de que David Wise metía Notas por separado en la computadora
+<br>Metía, pedazos de una canción completa todo junto, a la computadora
+<br>Cada canción llevaba semanas ser programado en el software dedicado
+<br>Para traducir algo al chip del cartucho de Super Nintendo
+<br>Pero los resultados eran algo siempre, como esto
+<br>[Música]
+<br>Esas ondas que se escuchan de fondo
+<br>A eso es lo que nos referimos que pudo programar David Wise
+<br>Y efectivamente
+<br>Esto se creía imposible para el hardware que se trabajaba
+<br>Esto daba la oportunidad de converger
+<br>Y afirmar más la idea de convertir Donkey Kong Country
+<br>En un juego inmersivo, que los demás de Super Nintendo
+<br>Algo que decíamos que es
+<br>Algo raro para ser de Nintendo
+<br>Y lo que salía del molde desde que comienzas a escuchar en el primer segundo que juegas
+<br>El primer nivel
+<br>No cumple con la melodía explosiva y carismática
+<br>Que normalmente escucharíamos en un tema de videojuegos
+<br>Esto hasta muy entrada la canción
+<br>Antes de eso
+<br>Hay un sonido ambiental por más de 20 segundos
+<br>Cada instrumento, lentamente comienza a entrar de forma ordenada
+<br>Diciendo, que viene algo más
+<br>Se crea una emoción de espera
+<br>Mientras creemos que realmente estamos en la selva
+<br>Mientras corremos y saltamos obstáculos
+<br>Tal vez el juego simplemente se enfocaba
+<br>A tener música ambiental
+<br>Y no música melódica, como todos los juegos de antes
+<br>Hasta que por fin
+<br>La catarsis del sonido
+<br>Ese piano
+<br>Dios santo
+<br>No merecíamos esto
+<br>Siempre se me enchina la piel con esto
+<br>Esto, ya es la melodía por fin, después de haber sentido la inmersión y esto
+<br>Era lo diferente también
+<br>Definitivamente el Super Nintendo
+<br>Era una consola que estaba limitada en memoria
+<br>Y justificadamente por su tiempo
+<br>Y así como muchos desarrolladores y músicos
+<br>Aprovecharon los pequeños espacios para mejorar
+<br>Aún y sólo teniendo 64 KB's
+<br>La música de Donkey Kong Country
+<br>Respiro por fuera, de los juegos
+<br>Y convirtió un trabajo muy tedioso de un compositor como David Wise
+<br>En composiciones tan ambiciosas y complejas
+<br>Que uno no creería
+<br>Que es de la misma era, que los otros juegos de Super Nintendo
+<br>Conclusión
+<br>Donkey Kong Country
+<br>Fue uno de los detonantes del cambio y fue la llamada de atención
+<br>Del progreso hacía Nintendo
+<br>La gota que derramó el vaso, de las ganas por no querer aceptar
+<br>Que ya venía el 3D
+<br>Estos juegos, fueron hechos para convencer a la gente de que, sus Super Nintendo's
+<br>Eran más poderosos de lo que creían
+<br>Y lo lograron
+<br>Fue el que le dijo a Nintendo que no podía seguir haciendo lo mismo
+<br>Y esperar a que siga todo perfecto en su compañía
+<br>Y que definitivamente no podía dormirse en su gloría
+<br>Porque el mercado estaría completamente interesado en estas nuevas visuales 3D
+<br>Eso mismo que aceleró y confirmó
+<br>El desarrollo de Super Mario 64 por ejemplo, para la misma empresa
+<br>Ya teniendo en cuenta
+<br>Que tendrían que evolucionar con una nueva consola, para una nueva generación
+<br>Pero aún y con todo esto que hemos hablado
+<br>Estos juegos
+<br>Son altamente criticados y acusados de no tener una esencia que no se haya hecho
+<br>Y probablemente tu seas uno de esos
+<br>Y eso es completamente aceptable
+<br>El estilo visual tan diferente en la época
+<br>Es el punto obvio que todos dicen de estos juegos
+<br>Sus sprites son modelos en 3D convertidos en sprites
+<br>Y no son sprites, directamente dibujados
+<br>Como prácticamente, todos los de la época
+<br>El problema que lidiaba era tener
+<br>Tanta información en todos los aspectos posibles
+<br>Y cómo pudieron comprimirlo
+<br>Para que pudiera ser leído por los cartuchos del Super Nintendo
+<br>¿Es una ilusión de 3D?
+<br>¡Sí!
+<br>¡Sí lo es!
+<br>¿Puso algo nuevo a la mesa, al final de todo esto que dijimos?
+<br>Sí y no
+<br>No hay nada en Donkey Kong Country que no se había hecho decenas de veces antes
+<br>Pero lo que tomó, lo explotó de una manera tan diferente
+<br>Y muchas de ellas, las terminó expandiendo, como dijimos
+<br>Haciendo el COLLECTATHON
+<br>Estos juegos tienen físicas inexactas
+<br>Colisiones inexactas
+<br>Y diseños de niveles inexactos
+<br>Pero
+<br>Tan satisfactorios
+<br>Que hacen que quieras y tardes mucho, en entenderlos a la perfección
+<br>Y eso es lo que lo hace tan diferente
+<br>Y especial, de lo que Nintendo estaba tratando de vencer
+<br>Funcionaron, porque la corazonada de Rare
+<br>Por la evolución hacía el 3D, era correcta
+<br>Muchas personas en 1994
+<br>Todavía no sabían, lo que significaba el concepto de 3D
+<br>A no ser que fueran jugadores de Arcades o jugadores en PC
+<br>Así que
+<br>Donkey Kong Country, es el espacio intermedio
+<br>Entre seguir siendo un juego de 16-bits
+<br>Y una revolución
+<br>De una nueva tecnología
+<br>El legado de estos juegos
+<br>Ha quedado mucho en el escepticismo y argumentando
+<br>Que se debe únicamente por las visuales y no por el gameplay
+<br>Incluso habiendo críticas
+<br>No confirmadas de Miyamoto, hacía estos juegos, por lo mismo
+<br>Por no ver primero el gameplay antes de utilizar tecnología moderna
+<br>Y entiendo por qué diría eso
+<br>Rare tuvo un largo camino para identificar
+<br>Los problemas del mercado y crear
+<br>Un mundo consistente y lineal
+<br>Que increíblemente es inmersivo
+<br>Así como es divertido
+<br>Pero muy al estilo, de una empresa, no japonesa
+<br>Esta inmersión, aún ni hecha con las mismas técnicas de planos de bits
+<br>Que usaban todos los demás juegos de plataforma 2D, del mercado
+<br>Este proceso
+<br>Fue después siendo tomado de inspiración
+<br>Para muchas desarolladoras futuras
+<br>Y creando el plataformero 2.5D
+<br>Desde el Playstation en adelante
+<br>Pero pocos se vieron, tan limpios y consistentes
+<br>Como el trabajo que impecablemente, logró Rare
+<br>Nintendo estuvo al borde de la obsolescencia en 1994
+<br>Y Rare, indirectamente los salvó
+<br>De una forma que le dejó a Nintendo
+<br>Un mal sabor de boca
+<br>Y haciendo la mayor ilusión de tecnología, en visuales
+<br>En gameplay y en la música, directamente corriendo
+<br>En un Super Nintendo
+<br>Por eso, estos juegos, son los juegos imposibles
+<br>La curiosa disonancia
+<br>De la era del Super Nintendo
+<br>Y sí
+<br>Podríamos decir, que todo su proceso
+<br>Fue tan perfecto, que no debió existir</p>
+    </div>
+    <footer class="footer">Footer</footer>
+  </div>
+</body>
+    

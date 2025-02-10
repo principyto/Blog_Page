@@ -1,0 +1,42 @@
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/main.css">
+  <title>Grid Layout</title>
+  </head>
+  <body>
+  <div class="container">
+    <header class="header">Header</header>
+    <aside class="sidebar">Sidebar
+      <ul>
+        <li><a href="index">Main Page</a></li>
+        <% files.forEach(function(file) { %>
+          <% if (file !== 'index' && file !== 'edit') { %>
+            <li>
+              <a href="/<%= file %>"><%= file %></a>
+              <br>
+              <form action="/delete" method="POST" style="display:inline;">
+                <input type="hidden" name="filename" value="<%= file %>">
+                <button type="submit">Delete</button>
+              </form>
+              <form action="/edit" method="POST" style="display:inline;">
+                <input type="hidden" name="filename" value="<%= file %>">
+                <button type="submit">Edit</button>
+              </form>
+            </li>
+          <% } %>
+        <% }); %>
+      </ul>
+    </aside>
+    <form class="main-content" action="/submit" method="POST">
+      <textarea class="titleBox" type="text" name="title" placeholder="Title"> <%=Title %></textarea>
+      <br>
+      <textarea class="textBox" type="text" name="content" placeholder="Content"><%=Content%></textarea>
+      <br>
+      <input type="submit" value="OK">
+    </form> 
+    <footer class="footer">Footer</footer>
+  </div>
+</body>
+    

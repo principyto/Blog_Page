@@ -1,0 +1,120 @@
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/main.css">
+  <title>Grid Layout</title>
+  </head>
+  <body>
+  <div class="container">
+    <header class="header">Header</header>
+    <aside class="sidebar">Posts
+      <ul>
+        <li><a href="index">Main Page</a></li>
+        <% files.forEach(function(file) { %>
+          <% if (file !== 'index' && file !== 'edit') { %>
+            <li>
+              <a href="/<%= file %>"><%= file %></a>
+              <br>
+              <form action="/delete" method="POST" style="display:inline;">
+                <input type="hidden" name="filename" value="<%= file %>">
+                <button type="submit">Delete</button>
+              </form>
+              <form action="/edit" method="POST" style="display:inline;">
+                <input type="hidden" name="filename" value="<%= file %>">
+                <button type="submit">Edit</button>
+              </form>
+            </li>
+          <% } %>
+        <% }); %>
+      </ul>
+    </aside>
+    <div>
+      <h1 class="main-content" id="Title">     Los 10 mejores anuncios, bombazos y sorpresas de The Game Awards 2024</h1>
+      <p class="main-content" id="Content">Estamos por cerrar el año, pero antes de darnos abrazos y pensar en la cena de Navidad, es momento de hablar del evento que todos estábamos esperando: los Game Awards . Además de coronar a Astro Bot como el GOTY 2024, durante esta celebración dedicada al gaming tuvimos varios anuncios y algunas sorpresas que se llevaron la noche, como la aparición de Harrison Ford. The Game Awards 2024 se convirtió en el escaparate perfecto para dar a conocer nuevos proyectos que apenas comenzaron su desarrollo y otros que podremos jugar muy pronto.
+<br>
+<br>En LEVEL UP puedes encontrar una cobertura completa de todo lo sucedido durante la esperada premiación y en este artículo te compartimos las presentaciones que nos soprendieron. Sin más te dejamos los 10 anuncios más importantes de The Game Awards 2024.
+<br>
+<br>Video relacionado: Del mejor al peor - Juego del Año
+<br>
+<br>
+<br>
+<br>Shadows of Labyrinth
+<br>
+<br>Arrancamos con un anuncio inesperado: una readaptación de Pac-Man que ya pudimos ver en la serie Secret Level. El nuevo juego de Bandai Namco revive al legendario personaje como un depredador que no puede saciar su hambre. Sabemos que es un juego de acción en el que enfrentaremos enemigos, pero el mapa al estilo Metroidvania nos sugiere que podremos seguir varios caminos. La idea es que devoremos a los enemigos que aparezcan en nuestro camino antes de que la oscuridad nos consuma.
+<br>
+<br>El héroe de esta historia es conocido como el espadachín, quien no tiene más remedio que confiar en Pac-Man. Por lo que pudimos ver en el trailer, a lo largo del juego conseguiremos nuevas habilidades e, incluso, transformaciones. Todo esto para tratar de sobrevivir y encontrar la salida del laberinto. Shadows of Labyrinth parece sacado de una creepypasta, pero puede ser una buena forma de darle un giro a un clásico algo gastado. Saldrá en 2025 para Nintendo Switch, Xbox Series X|S, PlayStation 5, y PC a través de Steam.
+<br>
+<br>Ninja Gaiden Ragebound
+<br>
+<br>Seguimos con el regreso de otro héroe retro en un nuevo título desarrollado por The Game Kitchen, los creadores de Blasphemous. Ryu Hayabusa vuelve a sus orígenes en una aventura de acción que nos recuerda mucho a la época dorada del Super Nintendo. Ninja Gaiden Ragebound llegará en verano de 2025 y promete mantener su esencia en 2D llena de sprites con colores vibrantes, pero con la intensidad del combate 3D que tanto nos gusta.
+<br>
+<br>Aunque Ryu Hayabusa está de vuelta, tomaremos el control de un nuevo héroe llamado Kenji Mozu. Este joven aprendiz tendrá que echarle la mano al ninja legendario mientras viaja a honrar la memoria de su padre. Kenji deberá usar todas sus habilidades ninjas para defender la aldea Hayabusa en su ausencia. Ninja Gaiden Ragebound tiene el legado de una franquicia que alcanzó un alto estatus por su nivel de dificultad. Esperemos que esta nueva entrega nos haga sufrir igual que sus antepasados.
+<br>
+<br>Split Fiction
+<br>
+<br>Cómo olvidar a Josef Fares y su emblemática frase – F#ck The Oscars– en The Game Awards 2017. El talentoso director ganador del GOTY en 2021 está de vuelta pero ahora más sobrio y mejor portado. Su especialidad son los títulos diseñados para jugar en pareja como su nueva entrega, Split Fiction.
+<br>
+<br>El juego retoma la idea de cooperar en pantalla dividida para superar diferentes pruebas, como lo hicimos en It Takes Two. La idea es jugar con la novia, los sobrinos o quien sea, en una aventura creativa y muy fácil de entender. Split Fiction nos lleva por mundos fantásticos y de ciencia ficción donde todo puede pasar. Y cuando decimos todo nos referimos a volar encima de un dragón o convertirnos en salchichas mientras giramos en una parrilla.
+<br>
+<br>Split Fiction se ve como la opción perfecta para compartir nuestra pasión por los videojuegos con los que no juegan videojuegos. La buena noticia es que tenemos que esperar poco porque se estrena en marzo de 2025.
+<br>
+<br>Project Robot
+<br>
+<br>Fumito Ueda es uno de esos desarrolladores que, con su bajo perfil, ha convertido sus ideas en algo único. Ico, Shadow of The Colossus y The Last Guardian son un legado de juegos que buscan ir más lejos. Son juegos de autor que apelan a dejar huella como una obra artística que cobra vida en los mundos digitales.
+<br>
+<br>Es verdad que The Last Guardian no logró tener el impacto de Shadow of The Colossus, pero Ueda no es de los que se rinde. Project Robot es el nuevo proyecto genDESIGN con el que quieren contar una historia original llena de mensajes encriptados con sus propias reglas. La diferencia es que Project Robot prefiere explorar la ciencia ficción antes que la fantasía.
+<br>
+<br>En el trailer pudimos ver que el sello de Ueda está presente, pero al mismo tiempo, es muy diferente a sus otros trabajos. No hay fecha de lanzamiento, y ojalá pronto nos den más detalles.
+<br>
+<br>Virtua Fighter Project y Project Century
+<br>
+<br>Street Fighter 6 y Tekken 8 son los líderes indiscutibles del género de peleas en esta generación, sin embargo, SEGA decide entrar al ring con un nuevo contendiente. Virtua Fighter Project es el nombre clave del nuevo juego de peleas desarrollado por Ryo Ga Gotoku, los creadores de Like a Dragon o Yakuza, pa’ los cuates.
+<br>
+<br>Aunque se mostró poco, el nuevo juego de peleas parece respetar el movimiento natural del cuerpo con ataques basados en artes marciales reales. Según el trailer hoy mismo tendremos más información sobre el juego, así que pronto te daremos nuevas actualizaciones. Además de Virtua Fighter, también pudimos ver el primer adelanto de Project Century. Se ubica en Japón de 1915 durante la era Taisho y mantiene un perfil similar a lo que el estudio japonés nos tiene acostumbrados.
+<br>
+<br>Como siempre la carta de presentación de Ryo Ga Gotoku es el realismo y esperamos que como siempre nos entregué grandes juegos que nos transporten a la sociedad japonesa. Like a Dragon ha demostrado que puede hacer las cosas a su manera y adaptarse a diferentes épocas. Ambos juegos se ven muy bien pero al parecer tendremos que esperar sentados porque no hubo rastro sobre su fecha de estreno.
+<br>
+<br>Elden Ring Nightreign
+<br>
+<br>No te preocupes, nosotros también soñamos con ver Bloodborne 2 o al menos su lanzamiento oficial a PC. Aunque no tuvimos lo que queríamos, FromSoftware estaba listo para dejarnos con la boca abierta de todos modos. Hablamos de Elden Ring Nightreign un juego que logra darle un giro a los Souls tradicionales.
+<br>
+<br>Elden Ring Nightreign está diseñado como una experiencia cercana a lo arcade, donde lo que importa es prepararse para acabar con un jefe. La experiencia de juego está orientada al multijugador y aunque mantiene cierto grado de profundidad, lo importante es estar listo para soltar trancazos. Elden Ring Nightreign llegará en 2025 pero te recomendamos estar atento a LEVELUP.com porque muy pronto se abrirá el registro para que puedas probarlo en una beta y te daremos todos los detalles.
+<br>
+<br>Onimusha Way of The Sword
+<br>
+<br>Capcom mantiene su racha de buenas decisiones al revivir una franquicia que se mantuvo en el olvido por años. Onimusha Way of The Sword marca el regreso del juego de samuráis de Capcom que explora el japón antiguo. La leyenda de Samanosuke Akechi y sus habilidades para rebanar demonios pasaron a la historia, pero Capcom no ha revelado si volverá para esta entrega.
+<br>
+<br>A decir verdad, el trailer no aclara si se trata de un reboot total, una secuela o una nueva historia. Lo que sí sabemos es que Onimusha Way of The Sword se estrenará en 2026. La espera será larga pero al tomar en cuenta que llevamos casi 20 años sin un juego nuevo de Onimusha, 2 años no parece tanto. Ojalá que los próximos en la lista sean Mega Man y Dino Crisis, sin duda merecen un regreso digno.
+<br>
+<br>The Witcher 4
+<br>
+<br>El siguiente en la lista es un juego que tenía que llegar tarde o temprano: The Witcher 4. Geralt de Rivia pasó a la historia como uno de los personajes más importantes de todos los tiempos. El brujo de cabellera blanca al fin podrá tomarse un respiro con la llegada de Ciri como la nueva protagonista.
+<br>
+<br>El trailer cinemático de The Witcher 4 nos dejó ver el potencial de la hechicera y sus habilidades como cazadora de monstruos. Aunque hay pocos detalles sobre este lanzamiento de CD Projekt RED, sabemos que aprovechará las bondades del Unreal Engine 5 para crear su nuevo mundo abierto.
+<br>
+<br>También se ha confirmado que Geralt estará presente en el juego, pero no como protagonista. ¿Qué opinas de esto? ¿Crees que Ciri es una buena opción?
+<br>
+<br>Secuela de Okami
+<br>
+<br>Es curioso que un teaser de un minuto nos haya emocionado tanto. Y no es para menos, porque la diosa Amaterasu viene a llenarnos de su poder celestial en la secuela de Okami. Este anuncio es algo grande, porque marca el regreso de un juego que convenció a los más escépticos sobre el valor artístico de los videojuegos. Una mezcla de folclor japonés con un ingenioso control hicieron de Okami un clásico instantáneo que sin duda merecía una segunda parte.
+<br>
+<br>Okami se convirtió en algo grande desde su lanzamiento en el Wii hace más de 20 años. Es un viaje por la mitología japonesa en un mundo de acuarela que merece estar en un museo. Ahora imagina todo eso con el potencial del RE Engine y la tecnología de última generación, será bellísimo.
+<br>
+<br>Parece ser que la secuela de Okami se encuentra en una etapa de desarrollo muy temprana, ya que ni siquiera tiene un nombre oficial. Pero no te preocupes, el juego está en buenas manos porque Hideki Kamiya, creador de la franquicia original, también está incluído en el paquete. Esperamos que el creador de Devil May Cry, Viewtiful Joe y Bayonetta se enfoque en su trabajo y dejé de pelearse en redes sociales, como acostumbra.
+<br>
+<br>Intergalactic The Heretic Prophet
+<br>
+<br>Cerramos con el One More Thing de The Game Awards 2024, una sorpresa de Naughty Dog de la que no se había hablado antes. En ese momento todos pensamos que podría ser The Last of Us 3, pero al final fue algo completamente nuevo. Intergalactic The Heretic Prophet es el nuevo juego de Neil Druckmann, una aventura espacial que nos daba vibras de Concord pero parece ir por un camino muy diferente.
+<br>
+<br>Intergalactic The Heretic Prophet parece ser una combinación extraña entre Guardianes de la Galaxia, y Xenoblade Chronicles. Donde además de tener asegurada una excelente selección musical, también habrá grandes dosis de acción. Según información del Blog oficial de PlayStation, el juego comenzó su desarrollo desde 2020 y se espera que sea el trabajo más ambicioso de Naughty Dog.
+<br>
+<br>Intergalactic The Heretic Prophet nos cuenta la historia de Jordan A. Mun, una cazarrecompensas varada en el espacio. Algo que nos llamó la atención es la influencia de íconos de la cultura pop como Akira y la importante carga musical en el juego. Aunque Intergalactic The Heretic Prophet ha generado todo tipo de reacciones, se espera que sea uno de los grandes lanzamientos en el futuro. ¿Será un juego de acción lineal o de mundo abierto? ¿El juego es en realidad un enorme comercial de marcas populares? Es muy pronto para saberlo pero vale la pena seguirle la pista hasta que se revelen más detalles.
+<br>
+<br>¿Qué te parecen estos lanzamientos? ¿Crees que hizo falta algún anuncio importante? No olvides compartirnos tu opinión en los comentarios.
+<br></p>
+    </div>
+    <footer class="footer">Footer</footer>
+  </div>
+</body>
+    
